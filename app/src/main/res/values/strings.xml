@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rss Consumer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+    <string name="title_feeditem_list">FeedItems</string>
+    <string name="title_feeditem_detail">FeedItem Detail</string>
+    <string name="loading_feed">Loading Feed...</string>
+</resources>

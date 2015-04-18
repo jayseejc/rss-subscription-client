@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:id="@+id/tb_main" />
+
+    <fragment
+        android:id="@+id/feeditem_list"
+        android:name="com.jayseeofficial.rssconsumer.ui.feedlist.FeedItemListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:context="com.jayseeofficial.rssconsumer.ui.feedlist.FeedItemListActivity"
+        tools:layout="@android:layout/list_content" />
+</LinearLayout>

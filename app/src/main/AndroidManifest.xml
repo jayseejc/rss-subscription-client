@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jayseeofficial.rssconsumer" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.DebugActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.NewUserActivity"
+            android:label="@string/title_activity_new_user" >
+        </activity>
+        <activity
+            android:name=".ui.feedlist.FeedItemListActivity"
+            android:label="@string/title_feeditem_list" >
+        </activity>
+        <activity
+            android:name=".ui.feedlist.FeedItemDetailActivity"
+            android:label="@string/title_feeditem_detail"
+            android:parentActivityName=".ui.feedlist.FeedItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.feedlist.FeedItemListActivity" />
+        </activity>
+    </application>
+
+</manifest>
